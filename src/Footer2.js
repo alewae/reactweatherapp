@@ -6,7 +6,7 @@ export default function Footer2() {
     <div className="Footer2">
       <p className="footer">
         <a
-          href="https://github.com/alewae/Weather_App"
+          href="https://github.com/alewae/reactweatherapp"
           target="_blank"
           rel="noreferrer"
         >
