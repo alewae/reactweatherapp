@@ -11,7 +11,7 @@ export default function Footer2() {
           rel="noreferrer"
         >
           Open-source code
-        </a>
+        </a>{" "}
         by Alexandra Wälti
       </p>
     </div>
