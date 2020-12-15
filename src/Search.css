@@ -1,0 +1,22 @@
+.Search .search-city {
+  justify-content: center;
+  padding: 5px;
+  margin: 0 auto;
+}
+.Search .search-icon {
+  padding: 11px 0 0;
+  color: #5862c4;
+  display: inline;
+}
+.Search .searchButton {
+  background: #5862c4;
+  border: 1px solid #5862c4;
+  margin: 0 10px;
+}
+.Search .searchButton:hover {
+  cursor: pointer;
+  border: 1px solid #5862c4;
+  color: white;
+  background: #5862c4;
+  opacity: 0.5;
+}

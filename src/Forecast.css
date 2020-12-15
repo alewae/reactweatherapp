@@ -1,0 +1,8 @@
+.Forecast ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Forecast h5 {
+  margin-bottom: 0;
+}

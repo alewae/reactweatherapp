@@ -1,0 +1,15 @@
+.SearchResult .card-title {
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.SearchResult .final-city-name {
+  background: #5862c4;
+  text-align: center;
+  color: white;
+  padding: 10px 0 20px 0;
+  margin: 15px auto;
+  border-radius: 10px;
+}
