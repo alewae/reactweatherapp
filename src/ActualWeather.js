@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import FormattedDate from "./FormattedDate";
 import axios from "axios";
 import "./ActualWeather.css";
 
@@ -11,7 +12,9 @@ export default function ActualWeather(props) {
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
+      city: response.data.name,
       icon: response.data.weather.icon,
+      date: new Date(response.data.dt * 1000),
     });
   }
 
@@ -19,11 +22,26 @@ export default function ActualWeather(props) {
     return (
       <div className="ActualWeather">
         <div className="container">
+          <div className="card final-city-name" style={{ width: 18 + "em" }}>
+            <FormattedDate date={weatherData.date} />
+            <p className="city">{weatherData.city}</p>
+          </div>
+          <p className="chooseUnit">
+            <em>
+              Choose your desired unit{" "}
+              <a href="/" className="celcius">
+                °C
+              </a>{" "}
+              /
+              <a href="/" className="fahrenheit">
+                °F
+              </a>
+            </em>
+          </p>
           <div className="overview-date">
             <h5 className="date_title">
               <strong>Actual weather</strong>
             </h5>
-            <img src={weatherData.icon} alt="weather icon" />
             <h4 className="temperature">
               <span id="temp-1">{Math.round(weatherData.temperature)}°C</span>
             </h4>

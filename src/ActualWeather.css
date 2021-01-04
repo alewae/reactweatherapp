@@ -2,6 +2,13 @@
   list-style: none;
   padding: 0;
 }
+.ActualWeather .city {
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
 .ActualWeather .overview-date {
   width: 400px;
   margin: 0 auto 20px auto;
@@ -26,4 +33,29 @@
   color: white;
   background: #5862c4;
   transform: scale(1.1);
+}
+
+.ActualWeather .card-title {
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.ActualWeather .final-city-name {
+  background: #5862c4;
+  text-align: center;
+  color: white;
+  padding: 10px 0 20px 0;
+  margin: 15px auto;
+  border-radius: 10px;
+}
+.ActualWeather .chooseUnit {
+  text-align: center;
+}
+.ActualWeather .celcius {
+  color: #5862c4;
+}
+.ActualWeather .fahrenheit {
+  color: #5862c4;
 }
