@@ -21,7 +21,7 @@ function WeatherAppReact() {
       <Search />
       <SearchResult />
       <Unit />
-      <ActualWeather />
+      <ActualWeather defaultCity="Berlin" />
       <Forecast />
       <Footer2 />
     </div>
