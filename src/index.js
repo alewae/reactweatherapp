@@ -5,8 +5,7 @@ import "bootstrap/dist/css/bootstrap.css";
 
 import Title from "./Title";
 import Header from "./Header";
-import Search from "./Search";
-import ActualWeather from "./ActualWeather";
+import Weather from "./Weather";
 import Forecast from "./Forecast";
 import Footer2 from "./Footer2";
 
@@ -15,8 +14,7 @@ function WeatherAppReact() {
     <div className="WeatherAppReact">
       <Header />
       <Title />
-      <Search />
-      <ActualWeather defaultCity="Berlin" />
+      <Weather defaultCity="Berlin" />
       <Forecast />
       <Footer2 />
     </div>
