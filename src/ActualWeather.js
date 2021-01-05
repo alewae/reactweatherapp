@@ -25,6 +25,7 @@ export default function ActualWeather(props) {
         <h5 className="date_title">
           <strong>Actual weather</strong>
         </h5>
+        <img src={props.data.icon} alt="weather icon" />
         <h4 className="temperature">
           <span id="temp-1">{Math.round(props.data.temperature)}°C</span>
         </h4>
