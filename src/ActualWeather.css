@@ -49,10 +49,11 @@
   margin: 15px auto;
   border-radius: 10px;
 }
+
 .ActualWeather .chooseUnit {
   text-align: center;
 }
-.ActualWeather .celcius {
+.ActualWeather .celsius {
   color: #5862c4;
 }
 .ActualWeather .fahrenheit {

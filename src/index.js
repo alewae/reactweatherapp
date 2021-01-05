@@ -6,7 +6,6 @@ import "bootstrap/dist/css/bootstrap.css";
 import Title from "./Title";
 import Header from "./Header";
 import Weather from "./Weather";
-import Forecast from "./Forecast";
 import Footer2 from "./Footer2";
 
 function WeatherAppReact() {
@@ -15,7 +14,6 @@ function WeatherAppReact() {
       <Header />
       <Title />
       <Weather defaultCity="Berlin" />
-      <Forecast />
       <Footer2 />
     </div>
   );

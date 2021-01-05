@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ActualWeather from "./ActualWeather";
+import Forecast from "./Forecast";
 import axios from "axios";
 import "./Weather.css";
 
@@ -36,35 +37,28 @@ export default function Weather(props) {
   if (weatherData.ready) {
     return (
       <div className="Weather">
-        <div className="container">
-          <div className="row search-city">
-            <i className="fas fa-search search-icon"></i>
-            <form className="form-inline" onSubmit={handleSubmit}>
-              <div className="form-group mx-sm-3 mb-2">
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Enter city name"
-                  autoComplete="off"
-                  onChange={handleCityChange}
-                />
-              </div>
-              <button
-                type="submit"
-                className="btn btn-primary mb-2 searchButton"
-              >
-                Search
-              </button>
-              <button
-                type="submit"
-                className="btn btn-primary mb-2 searchButton"
-              >
-                Current location
-              </button>
-            </form>
-          </div>
-          <ActualWeather data={weatherData} />
+        <div className="row search-city">
+          <i className="fas fa-search search-icon"></i>
+          <form className="form-inline" onSubmit={handleSubmit}>
+            <div className="form-group mx-sm-3 mb-2">
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Enter city name"
+                autoComplete="off"
+                onChange={handleCityChange}
+              />
+            </div>
+            <button type="submit" className="btn btn-primary mb-2 searchButton">
+              Search
+            </button>
+            <button type="submit" className="btn btn-primary mb-2 searchButton">
+              Current location
+            </button>
+          </form>
         </div>
+        <ActualWeather data={weatherData} />
+        <Forecast data={weatherData} city={weatherData.city} />
       </div>
     );
   } else {

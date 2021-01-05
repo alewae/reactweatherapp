@@ -6,3 +6,27 @@
 .Forecast h5 {
   margin-bottom: 0;
 }
+
+.Forecast img {
+  display: block;
+}
+
+.Forecast .overview-weather {
+  border: 2px solid #5862c4;
+  text-align: center;
+  border-radius: 10px;
+  padding-top: 10px;
+}
+
+.Forecast .overview-weather:hover {
+  cursor: pointer;
+  border: 2px solid #5862c4;
+  color: white;
+  background: #5862c4;
+  transform: scale(1.1);
+}
+.Forecast .temperature {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
