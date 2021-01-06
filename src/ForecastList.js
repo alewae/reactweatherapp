@@ -13,8 +13,9 @@ export default function ForecastList(props) {
     if (props.unit === "fahrenheit") {
       temperature = Math.round((temperature * 9) / 5 + 32);
       return `${temperature}°F`;
+    } else {
+      return `${temperature}°C`;
     }
-    return `${temperature}°C`;
   }
 
   function wind() {
@@ -22,9 +23,9 @@ export default function ForecastList(props) {
     if (props.unit === "fahrenheit") {
       wind = Math.round(wind * 2.237);
       return `${wind} mph`;
+    } else {
+      return `${wind} km/h`;
     }
-
-    return `${wind} km/h`;
   }
   function humidity() {
     let humidity = props.data.main.humidity;

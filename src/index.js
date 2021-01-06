@@ -13,7 +13,7 @@ function WeatherAppReact() {
     <div className="WeatherAppReact">
       <Header />
       <Title />
-      <Weather defaultCity="Berlin" />
+      <Weather defaultCity="Hawaii" />
       <Footer2 />
     </div>
   );

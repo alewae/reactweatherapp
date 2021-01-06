@@ -54,9 +54,6 @@ export default function Weather(props) {
             <button type="submit" className="btn btn-primary mb-2 searchButton">
               Search
             </button>
-            <button type="submit" className="btn btn-primary mb-2 searchButton">
-              Current location
-            </button>
           </form>
         </div>
         <ActualWeather data={weatherData} unit={unit} setUnit={setUnit} />
