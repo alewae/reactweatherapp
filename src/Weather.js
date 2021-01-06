@@ -62,6 +62,10 @@ export default function Weather(props) {
     );
   } else {
     search();
-    return "Please hold on, Petrus is looking up the actual weather";
+    return (
+      <div className="sorry">
+        "Please hold on, Petrus is looking up the actual weather"
+      </div>
+    );
   }
 }
