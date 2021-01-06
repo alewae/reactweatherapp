@@ -1,21 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import FormattedDate from "./FormattedDate";
 import "./ActualWeather.css";
 
 export default function ActualWeather(props) {
-  const [unit, setUnit] = useState("celsius");
-
   function convertToFahrenheit(event) {
     event.preventDefault();
-    setUnit("fahrenheit");
+    props.setUnit("fahrenheit");
   }
 
   function convertToCelsius(event) {
     event.preventDefault();
-    setUnit("celsius");
+    props.setUnit("celsius");
   }
 
-  if (unit === "celsius") {
+  if (props.unit === "celsius") {
     return (
       <div className="ActualWeather">
         <div className="card final-city-name" style={{ width: 18 + "em" }}>
