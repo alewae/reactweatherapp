@@ -7,10 +7,6 @@
   margin-bottom: 0;
 }
 
-.Forecast img {
-  display: block;
-}
-
 .Forecast .overview-weather {
   border: 2px solid #5862c4;
   text-align: center;
@@ -29,4 +25,8 @@
   text-align: center;
   font-size: 25px;
   font-weight: bold;
+}
+.Forecast img {
+  margin: 0 auto;
+  display: block;
 }
