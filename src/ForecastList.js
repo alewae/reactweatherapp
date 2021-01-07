@@ -36,7 +36,7 @@ export default function ForecastList(props) {
       <div className="ForecastList overview-weather">
         <strong>{hours()}</strong>
         <img
-          src={`http://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`}
+          src={`https://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`}
           alt="weather icon"
         />
         <p className="temperature">{temperature()}</p>
