@@ -64,7 +64,7 @@ export default function Weather(props) {
     search();
     return (
       <div className="sorry">
-        "Please hold on, Petrus is looking up the actual weather"
+        Please hold on, Petrus is looking up the actual weather
       </div>
     );
   }
